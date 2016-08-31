@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Instituto Aonikenk</title>
+     <!--
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css" type="text/css"
+      --> 
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+   
+    <body>
+        <script src="js/libs/jquery/jquery.js"></script>  
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>  
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                        <img src="pictures/logoIA.png" width="228" height="206" alt="logoIA"/ class="img-responsive img-rounded">
+                    </div>
+                    <div class="col-md-6">
+                          <h1 class="text-primary">Instituto Aonikenk<small>  Caleta Olivia - Santa Cruz  </small></h1>
+                    </div>
+                   <div class="col-md-2" align="center">
+                       <a href="#">Aula Virtual</a>
+                        &shortmid;
+                      <a href="#">Portal Familiar</a>
+                   </div>
+                 </div>
+            </div>   
+           <!-- Aqui agrego el menu dentro del header-->
+           <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+               <div class="container">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-gm">
+                           <span class="sr-only">Desplegar / Ocultar Menu</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                   </div>
+                   <!-- Inicia menu-->
+                   <div class="collapse navbar-collapse" id="navegacion-gm">
+                       <ul class="nav navbar-nav">
+                           <li class="active"><a href="index.php">Inicio</a></li>
+                           <li><a href="#NuestroInstituto.php">Nuestro Instituto</a></li>
+                           <li><a href="ensenanza.php">Enseñanza</a></li>
+                           <li><a href="#">Novedades</a></li>
+                           <li><a href="#">Inscripciones</a></li>
+                       </ul>
+                       <form action="" class="navbar-form navbar-right" role="search">
+                           <div class="form-group">
+                               <input type="text" class="form-control" placeholder="Buscar">
+                               
+                           </div>
+                       </form>
+                   </div> 
+               </div>
+           </nav>
+        </header>
+<!--
+El siguiente codigo corresponde a la incorporacion de un slider
+-->
+       <div align="center"><img src="pictures/slide8.jpg" alt="escuela"/></div>               
+       <!--La siguiente linea agrega linea vacia por debajo del slide -->
+      <div class=""> <br> </div>       
+        
+      <!-- Aqui comienza menu vertical -->
+      <div class="container">  
+      <div class="row">
+             <div class="col-md-2">
+               <h3>Secciones</h3>
+                    <ul class="nav nav-pills nav-stacked">
+                         <li  class="active"><a data-toggle="pill" href="#Bienvenidos">Bienvenidos</a></li>
+                         <li><a data-toggle="pill" href="#NuestraHistoria">Nuestra Historia</a></li>
+                                              
+                         <!--   El siguiente código corresponde a sub-menu desplegable para sección Organización--> 
+                        
+                         <li> <div id="MainMenu">
+                                <div class="list-group panel">
+                                    <a href="#organizacion" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Organización  <span class="glyphicon glyphicon-chevron-down"</span></a>
+                                     <div class="collapse" id="organizacion">
+                                         <a href="#directivos" class="list-group-item">Directivos </a>
+                                         <a href="" class="list-group-item">Miembros de la Fundación</a>
+                                         <a href="" class="list-group-item">Secretarios</a>
+                                     </div>
+    
+                                </div>
+                         </div></li>
+                             
+                                              
+                         <li><a data-toggle="pill" href="#reglamentacion">Reglamentación</a></li>
+                         <li><a data-toggle="pill" href="#NuestroEdificio">Nuestro Edificio</a></li>
+                         <li><a data-toggle="pill" href="#ComoEncontrarnos">Como Encontrarnos</a></li>
+                                 
+                    </ul>   
+               
+            </div> 
+          
+               
+            <div class="col-md-10">
+                <div class="tab-content">          
+                     <div id="Bienvenidos" class="tab-pane fade in active" >
+                         <h3>Bienvenidos</h3>              
+                         <h4> <em>Bienivenidos al Instituto Privado Aonikenk</em></h4>
+                         <p class="text-justify">Uno de los ejes del Proyecto Institucional se vincula fuertemente con la premisa de que todos nuestros alumnos pueden aprender, por la tanto se asiste a una propuesta de enseñanza personalizada.
+                         <p class="text-justify">El Instituto Aonikenk cuenta con el Nivel inicial, Primario y Secundario.</p>
+                         <p class="text-justify">El Instituto Aónikenk opta por un modelo de curriculum flexible, que permite se autonomía, propia de un planteamiento participativo, facilita la adecuación de la acción educativa al contexto social y cultural. </p>
+                     </div>
+                     
+                     <div id="NuestraHistoria" class="tab-pane fade" >
+                         <h3>Nuestra Historia</h3>              
+                         <p class="text-justify"> Desde 1990 el Instituto Aonikenk está en la ciudad de Caleta Olivia, con trayectoria y continuidad en todos los niveles del sistema educativo.</p>
+                         <p class="text-justify">El proyecto educativo apunta a la integralidad del alumno, adquiriendo saberes, bienestar, realización personal y su felicidad.</p>
+                         <p class="text-justify">Preferimos un seguimiento personalizado, respetando procesos personales, tiempos y estilos de aprendizajes de cada uno, a fin de desarrollar al máximo el potencial propio y habilidades individuales.</p>
+                        <p class="text-justify">El ciudadano de hoy requiere una formación básica en ciencias si aspira a comprender su entorno y a participar en las decisiones sociales.</p>
+                     </div>
+                
+                     <div id="directivos" class="tab-pane fade" >
+                         <h3>Directivos</h3>              
+                         <p class="text-justify"> Desde 1990 el Instituto Aonikenk está en la ciudad de Caleta Olivia, con trayectoria y continuidad en todos los niveles del sistema educativo.</p>
+                         <p class="text-justify">El proyecto educativo apunta a la integralidad del alumno, adquiriendo saberes, bienestar, realización personal y su felicidad.</p>
+                         <p class="text-justify">Preferimos un seguimiento personalizado, respetando procesos personales, tiempos y estilos de aprendizajes de cada uno, a fin de desarrollar al máximo el potencial propio y habilidades individuales.</p>
+                        <p class="text-justify">El ciudadano de hoy requiere una formación básica en ciencias si aspira a comprender su entorno y a participar en las decisiones sociales.</p>
+                     </div>
+                    
+                    
+                    <div id="reglamentacion" class="tab-pane fade" >
+                         <h3>Reglamentación</h3>              
+                         <p class="text-justify"> En esta sección se encuentran disponibles para su descargar diferentes reglamentos, regimen de convivencia y solicitud de pase:</p>
+                         <p class="text-justify"><a href="">Regimen de convivencia <img src="fonts/pdf.png" alt="Logo pdf"/></a></p>
+                         <p class="text-justify"><a href="">Reglamento Nivel Inicial <img src="fonts/pdf.png" alt="Logo pdf"/></a></p> 
+                         <p class="text-justify"><a href="">Reglamento Nivel Primario <img src="fonts/pdf.png" alt="Logo pdf"/></a></p>
+                         <p class="text-justify"><a href="">Reglamento Nivel Secundario <img src="fonts/pdf.png" alt="Logo pdf"/></a></p>
+                         <p class="text-justify"><a href="">Solicitud de Pase <img src="fonts/pdf.png" alt="Logo pdf"/></a></p>
+                    </div>
+                    <div id="NuestroEdificio" class="tab-pane fade" >
+                         
+                         <h3>Nuestro Edificio</h3>              
+                         <br>
+                         <h4>Equipamiento informático </h4>
+
+                         <p class="text-justify"> El establecimiento cuenta con el equipamiento necesario para preparar el B2i “Brevet informatique et internet”, éste certifica el nivel adquirido por los alumnos en lo que respecta al conocimiento de los elementos multimedia y de internet.</p>
+                         <div align="center"> <img src="pictures/laboratorio computacion.jpg" alt="Sala de informatica"/></div>
+                         <br>   
+                         <h4>Biblioteca</h4>
+                         <p class="text-justify"> Espacio abierto a todos los alumnos del colegio, la biblioteca (centro documentario y de información) ejerce un rol central en las animaciones y actividades pedagógicas organizadas en torno a la lectura. Dispone más de 15 mil volúmenes (en francés, español e inglés) y de computadoras con acceso a internet.</p>
+                         <div align="center"><img src="pictures/biblioteca.jpg" alt="Bilioteca"/></div>
+                         <br>
+                         <h4>Laboratorio</h4>
+                         <p class="text-justify"> Los programas del secundario priorizan una puesta en marcha de la investigación para disciplinas tales como ciencia y tecnología. Este descubrir es un cuestionamiento de los alumnos sobre el mundo real, en ciencias y tecnología, y sobre la resolución de problemas, en matemática.</p>
+                         <div align="center"><img src="pictures/laboratorio.jpg" alt="Laboratorio de ciencias"/></div>
+                         <br>
+                         <h4>Deportes</h4>
+                         <p class="text-justify"> El Colegio tiene como objetivo que los alumnos conozcan la diversidad de deportes existentes como así también sus características y condiciones. A lo largo de los años, los alumnos van pasando por distintas disciplinas y deportes. Los profesores de Educación Física realizan sus actividades en las instalaciones del colegio, en el caso de los cursos inferiores, y en las instalaciones deportivas de un club cercano, a partir de 3º año E.P.</p>
+                         <div align="center"> <img src="pictures/deporte1.jpg" alt="Espacio Deportivo"/></div>
+                         <br>
+                         <h4>Comedor escolar</h4>
+                         <p class="text-justify">Existen dos espacios habilitados para que los alumnos puedan almorzar en la institución: el comedor y la sala de pic nic para aquellos que traen vianda de sus casas. </p>
+                         <div align="center"> <img src="pictures/comedor.jpg" alt="Comedor"/></div>
+                    </div>
+                    <div id="ComoEncontrarnos" class="tab-pane fade" >
+                         <h3>Como Encontrarnos</h3>              
+                         <p>
+                            <div style="text-align:center">
+				<iframe width='605' height='400' style='border: 0px solid #000000' src='http://maps.google.com/?q=Instituto Aonikenk, Caleta Olivia, Santa Cruz&z=15&output=embed&hl=es&t=m'></iframe>	
+                            </div>
+                         </p>
+                    </div>
+               </div>
+            </div>
+            </div>
+       </div>
+    
+  <?php
+        // put your code here
+        ?>
+        <footer>
+            <div class=""> <br> </div>  
+            <div class="panel-body">
+                <div class="col-md-6">
+                    <p class="small">Instituto Privado Aonikenk</p>
+                    <p class="small">Nro. de Registro CO - I.P.S - 14</p>  
+                </div>
+                <div class="col-md-6">
+                    <p class="small">  <span class="glyphicon glyphicon-phone-alt"> </span> Telefono: 0297 485-1818</p>
+                        
+                    <p class="small">  <span class="glyphicon glyphicon-envelope"></span> E-mail: 4854656</p>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p class="small">Mapa del sitio &shortmid;  Sitio desarrollado por MGM Sistemas</p>
+                        
+                    </div>
+                    <div class="col-xs-6">
+                        <ul class="fa-ul">
+                            <p class="small">
+                            <img src="fonts/glyphicons-social-31-facebook.png" alt=""/> Facebook
+                             &shortmid;              
+                            <img src="fonts/glyphicons-social-39-skype.png" alt=""/> Skype
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
